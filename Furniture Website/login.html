@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+    h1{
+      text-shadow:3px 3px pink; 
+    }
+        label{
+          margin-bottom: 2px;
+        }
+        a{
+        margin-left: 50px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    #A{
+		background-color:darkseagreen;
+		height: 40px;
+		width: 100%;
+    margin-top: 290px;
+    }
+    .h1-f {
+      font-weight: 500px; 
+      padding-left: 130px;
+      font-size: 40px;
+    }
+    .lab {
+      font-size: 20px;
+      color: black;
+    }
+    .form-control {
+     border: 2px solid black; border-radius:0%, 40%,0%, 40%;
+    }
+    .lab2 {
+      margin-top: 10px; font-size: 20px; color: black;
+    }
+    .btn {
+      margin-left: 100px;margin-top: 20px;
+    }
+</style>
+
+</head>
+<body>
+  <nav class="navbar navbar-default" style="background-color:#86C6E6;">        
+    <div class="container-fluid">
+          <div class="navbar-header">
+            <img src="C:\Users\Netra\Desktop\HTML\Furniture Website\img\logo.png">
+          </div>
+
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html" style="color: black;">Home <span><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
+            <li><a href="services.html" style="color: black;">Services <span><i class="fa fa-server" aria-hidden="true"></i></span></a></li>
+            <li><a href="about.html" style="color: black;">About <span><i class="fa fa-arrow-down" aria-hidden="true"></i></span></a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" style="color: black;">Shop</a>
+                <ul class="dropdown-menu">
+                    <li><a href="details_hall.html">Details of Hall</a></li>
+                    <li><a href="details_kitchen.html">Details of Kitchen</a></li>
+                    <li><a href="details_bedroom.html">Details of Bedroom</a></li>
+                    <li><a href="details_office.html">Details of Office</a></li>
+                </ul>
+            </li>
+            <li><a href="contect.html" style="color: black;">Contact <span><i class="fa fa-phone" aria-hidden="true"></i></span></a></li>
+            <li><a href="all_design.html" style="color: black;">All Data <span><i class="fa fa-database" aria-hidden="true"></i></span></a></li>
+            <li><a href="login.html" style="color: black;">Login <span><i class="fa fa-sign-in" aria-hidden="true"></i></span></a></li> 
+        </ul>
+
+        </div>
+    </nav>
+      <br>
+      <!------------Login form------------>
+      <div class="container" style="background-color:rosybrown;border:4px solid darkcyan; border-radius:10px;">
+        <div class="row" style="margin-top: 40px;">
+          <div class="col-md-6">
+            <img class="img-rounded" src="C:\Users\Netra\Desktop\HTML\Furniture Website\img\login_page.jpg" height="300px">
+          </div>
+
+          <div class="col-md-6">
+            <form action="Registration_Form.html">
+              <h1 class="h1-f">Login Now</h1>
+
+              <div calss="row">
+                <div class="col-md-8">
+                  <label class="lab">Email</label>
+                  <input type="email" class="form-control" required>
+                </div>
+              </div>
+
+              <div calss="row">
+                <div class="col-md-8">
+                  <label class="lab2">Password</label>
+                  <input type="password" class="form-control" maxlength="6"required>
+                </div>
+              </div>
+          </div>
+
+              <br><br>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <input type="submit" value="Login" class="btn btn-info btn-lg" class="btn" required>
+                </div>
+              </div>
+<br><br><br>
+            </form>
+          </div>
+        </div>
+      </div>
+        <!--footer-->
+        <footer>
+            <center><h4 id="A">Design By : Netra P. Morjaria</h4></center>
+        </footer>
+
+</body>
+</html>

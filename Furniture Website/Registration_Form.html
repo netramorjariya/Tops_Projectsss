@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+            form{
+            background-color: rosybrown;
+            border:4px solid darkcyan;
+            width:70%;
+            padding:5px;
+            border-radius:10px;
+            box-sizing: border-box;
+
+        }
+    a{
+        margin-left: 50px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .btn
+    {
+        border: 2px solid darkcyan;
+    }
+    .btn:hover{
+        color:black;
+        background-color: pink;
+    }
+    #A{
+		background-color:darkseagreen;
+		height: 40px;
+		width: 100%;
+        margin-top: 50px;
+	}
+        input[type="text"],input[type="number"],input[type="email"],input[type="password"],input[type="date"]
+        {
+            width:500px;
+            border:2px solid darkcyan;
+            border-radius:10px;
+            margin-left:10px;
+            margin-top:10px;
+            padding:10px;
+        }
+        select
+        {
+            width:50%;
+            border:2px solid darkcyan;
+            padding:5px;
+            border-radius:10px; 
+            margin-left:10px;
+            margin-top:10px;
+            padding:10px;   
+        }
+        textarea
+        {
+            width:50%;
+            border:2px solid darkcyan;
+            padding:5px;
+            border-radius:10px;  
+            margin-left:10px;
+            margin-top:10px;
+            padding:10px;  
+        }
+        input[type="checkbox"]
+        {
+            border:2px solid darkcyan;
+            border-radius:10px;    
+        }
+        input[type="file"]
+        {
+            width:50%;
+            border:2px solid darkcyan;
+            padding:5px;
+            border-radius:10px;
+            margin-left:10px;
+            margin-top:10px;
+            padding:10px;    
+        }
+       button{
+            width:80px;
+            border:2px solid darkcyan;
+            border-radius:10px;
+            margin-left:200px;
+            margin-top:10px;
+            padding:10px; 
+        }
+        button:hover{
+            background-color:yellow;
+			height:50px;
+            color: palevioletred;
+            font-size:20px;
+        }
+        label
+        {
+            /* color: blueviolet; */
+            font-size:20px;
+
+        }
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow:3px 3px pink; 
+
+        }
+        
+</style>
+
+</head>
+<body>
+    <nav class="navbar navbar-default" style="background-color:#86C6E6; position:-webkit-sticky; position: sticky; top: 0;">        <div class="container-fluid">
+          <div class="navbar-header">
+            <img src="C:\Users\Netra\Desktop\HTML\Furniture Website\img\logo.png">
+          </div>
+
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html" style="color: black;">Home <span><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
+            <li><a href="services.html" style="color: black;">Services <span><i class="fa fa-server" aria-hidden="true"></i></span></a></li>
+            <li><a href="about.html" style="color: black;">About <span><i class="fa fa-arrow-down" aria-hidden="true"></i></span></a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" style="color: black;">Shop</a>
+                <ul class="dropdown-menu">
+                    <li><a href="details_hall.html">Details of Hall</a></li>
+                    <li><a href="details_kitchen.html">Details of Kitchen</a></li>
+                    <li><a href="details_bedroom.html">Details of Bedroom</a></li>
+                    <li><a href="details_office.html">Details of Office</a></li>
+                </ul>
+            </li>
+            <li><a href="contect.html" style="color: black;">Contact <span><i class="fa fa-phone" aria-hidden="true"></i></span></a></li>
+            <li><a href="all_design.html" style="color: black;">All Data <span><i class="fa fa-database" aria-hidden="true"></i></span></a></li>
+            <li><a href="login.html" style="color: black;">Login <span><i class="fa fa-sign-in" aria-hidden="true"></i></span></a></li>
+        </ul>
+
+        </div>
+      </nav>
+      <br>
+
+      <center>
+        <form action="index.html">
+                <table>
+                <h2>Registration Form</h2>
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><input type="text" placeholder="Enter Your Name.." required></td>
+                </tr>  
+                
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td><input type="text" placeholder="Enter Your Last Name" required></td>
+                </tr>
+            
+                <tr>
+                    <td><label>Mobile Number</label></td>
+                    <td><input type="number" placeholder="Enter Your Number" required></td>
+            
+                <tr>    
+                    <td><label>Email</label></td>
+                    <td><input type="email" placeholder="Enter Your Email" required></td>
+                </tr>
+            
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" maxlength="6" placeholder="Enter Your Password" required></td>
+                </tr>
+            
+                <tr>
+                    <td><label>DOB</label></td>
+                    <td><input type="date" placeholder="Enter Your DOB" required></td>
+            
+                </tr>
+                
+                <tr>
+                    <td><label>Gender</llabel>
+                    <td><input type="radio" name="gen">Male
+                    <input type="radio" name="gen">Female</td>
+                </tr>
+            
+                <tr>
+                    <td><label>State</label></td>
+                    <td><select>
+                        <option>Gujarat</option>
+                        <option>UP</option>
+                    </select></td>
+                </tr>
+            
+                <tr>
+                    <td><label>City</label></td>
+                    <td><select>
+                        <option>Ahmedabad</option>
+                        <option>Rajkot</option>
+                        <option>Surat</option>
+                    </select></td>
+                </tr>
+                
+                <tr>
+                    <td><label>Address</label></td>
+                    <td><textarea placeholder="Enter your Address" required></textarea></td>
+            
+                </tr>
+            
+                <tr>
+                    <td><label>Hobbies</label></td>
+                    <td><input type="checkbox">Music
+                    <input type="checkbox">Dance
+                    <input type="checkbox">Foot ball</td>
+                </tr>
+            
+                <tr>
+                    <td><label>Upload resume</labele></td>
+                    <td><input type="file"></td>
+                </tr>
+                
+                <tr>
+                    <td><button class="btn">Submit</button></td>
+                    <td><button class="btn">Reset</button></td>
+                </tr>
+                </table>
+            
+            </center> 
+
+            <div class="div1">
+                <footer>
+                    <center><h4 id="A">Design By : Netra P. Morjaria</h4></center>
+                </footer>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
